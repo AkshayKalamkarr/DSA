@@ -5,10 +5,11 @@ else console.log("Target Found at index:", index);
 let index = binarySearch(arr, 0, arr.length - 1, 5);
 
 function binarySearch(arr, first, last, target) {
-  while (first <= last) {
+  if (first <= last) {
     let mid = Math.floor((first + last) / 2);
-    if (arr[mid] == target) return mid;
-    else if (arr[mid] > target) {
+    if (arr[mid] == target) {
+      return mid;
+    } else if (arr[mid] > target) {
       last = mid - 1;
     } else {
       first = mid + 1;
