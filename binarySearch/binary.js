@@ -5,6 +5,7 @@ let index = binarySearch(arr, 0, arr.length - 1, 5);
 if (index == -1) console.log("Not Found");
 else console.log("Target Found at index:", index);
 
+
 function binarySearch(arr, first, last, target) {
   if (first <= last) {
     let mid = Math.floor((first + last) / 2);
