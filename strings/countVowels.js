@@ -8,6 +8,7 @@ function vowels(str) {
     }
   }
   return count;
+  
 }
 
 console.log(vowels("akshay"));
