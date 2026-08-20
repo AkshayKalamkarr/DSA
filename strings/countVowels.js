@@ -7,6 +7,7 @@ function vowels(str) {
       count++;
     }
   }
+
   return count;
   
 }
